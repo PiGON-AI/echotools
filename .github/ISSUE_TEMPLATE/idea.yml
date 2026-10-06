@@ -1,0 +1,14 @@
+name: Suggest an idea
+description: A feature, a voice, a move, something Milo should learn
+labels: [idea]
+body:
+  - type: dropdown
+    id: product
+    attributes:
+      label: For which part of EchoTools?
+      options: [EchoVoice, EchoAvatar, EchoMemory, Milo in general, echotools.dev]
+    validations: {required: true}
+  - type: textarea
+    id: idea
+    attributes: {label: The idea, description: "What should it do, and what moment is it for?"}
+    validations: {required: true}
